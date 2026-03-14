@@ -7,7 +7,7 @@ The goal of this project is to enable scalable robot intelligence by integrating
 
 The system is built on top of **OpenClaw**, and extends it with a distributed node architecture that allows different components (robots, models, tools) to operate as independent services coordinated by a central node server.
 
-[![Static Badge](https://img.shields.io/badge/project-page-blue)](https://physclaw.github.io)
+[![Static Badge](https://img.shields.io/badge/project-page-blue)](https://gigaai-research.github.io/PhysClaw/)
 
 
 > ⚠️ This project is under active development.  
