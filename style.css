@@ -148,6 +148,27 @@ a {
     z-index: 1;
 }
 
+.hero-authors {
+    font-size: clamp(0.95rem, 1.6vw, 1.2rem);
+    max-width: 900px;
+    margin: -0.5rem auto 1.5rem;
+    font-weight: 500;
+    color: #424245;
+    line-height: 1.5;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-authors a {
+    color: #0071e3;
+    transition: opacity 0.2s;
+}
+
+.hero-authors a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
 .hero-buttons {
     display: flex;
     align-items: center;
