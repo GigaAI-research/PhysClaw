@@ -10,21 +10,19 @@
 <body>
     <header class="hero-section">
         <div class="container">
-            <nav class="navbar">
-                <div class="logo">PhysClaw*</div>
-                <div class="nav-links">
-                    <a href="#about">About</a>
-                    <a href="#framework">Framework</a>
-                    <a href="#features">Features</a>
-                    <a href="https://github.com/openclaw/openclaw" class="btn btn-outline">GitHub</a>
-                </div>
-            </nav>
             <div class="hero-content">
-                <h1 class="hero-title">PhysClaw* <br><span>Physical Continual Learning Agent Workflow</span></h1>
-                <p class="hero-subtitle">Bridging the gap between Physical AI and Real-World Interaction via Natural Language Feedback.</p>
-                <div class="hero-buttons">
-                    <a href="#framework" class="btn btn-primary">Explore Framework</a>
-                    <a href="#" class="btn btn-secondary">Read Paper</a>
+                <div class="hero-panel">
+                    <h1 class="hero-title">PhysClaw* </h1>
+                    <p class="hero-subtitle">What if your real-world robot could get better simply by chatting with you?</p>
+                    <div class="hero-buttons">
+                        <a href="#framework" class="btn btn-primary">Explore Framework</a>
+                        <a href="https://github.com/GigaAI-research/PhysClaw" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" class="btn-icon">
+                                <path d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.38-1.34-1.75-1.34-1.75-1.09-.75.09-.74.09-.74 1.2.09 1.83 1.23 1.83 1.23 1.07 1.84 2.8 1.3 3.49.99.11-.78.42-1.3.76-1.6-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.23-3.23-.12-.3-.53-1.52.12-3.17 0 0 1-.32 3.3 1.23a11.45 11.45 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.65 1.65.24 2.87.12 3.17.76.84 1.22 1.92 1.22 3.23 0 4.62-2.8 5.64-5.48 5.95.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"></path>
+                            </svg>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -43,7 +41,7 @@
                 </div>
                 <div class="text-block">
                     <h3>Our Solution</h3>
-                    <p>PhysClaw* leverages the power of OpenClaw agents to efficiently convert simple human chat into dense, accurate reinforcement learning signals. This enables robots to learn continuously from natural language feedback, closing the Sim2Real gap.</p>
+                    <p>PhysClaw* leverages the power of OpenClaw agents to efficiently convert simple human chat into dense, accurate reinforcement learning signals. This enables robots to learn continuously from natural language feedback.</p>
                 </div>
             </div>
         </div>
@@ -54,40 +52,63 @@
             <div class="section-header">
                 <h2>PhysClaw* Framework</h2>
                 <div class="divider"></div>
-                <p>A user-friendly architecture for efficient management of physical AI models and entities.</p>
+                <p>A user-friendly, Node-centric architecture for efficient management of physical-world AI models and entities.</p>
             </div>
-            
-            <div class="framework-grid">
-                <div class="card">
-                    <div class="icon">💬</div>
-                    <h3>Channel Layer</h3>
-                    <p>Accepts human chat inputs from various platforms including Feishu, WeChat, and SMS.</p>
+            <div class="framework-flow">
+                <div class="framework-stage flow-stage stage-entities">
+                    <div class="stage-head">
+                        <span class="stage-index">01</span>
+                        <h3>Entity Layer</h3>
+                    </div>
+                    <div class="entity-grid entity-simple">
+                        <span>Robot Entity</span>
+                        <span>Value Entity</span>
+                        <span>VLA Entity</span>
+                        <span>Training Entity</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="icon">🔀</div>
-                    <h3>Gateway</h3>
-                    <p>Acts as the central hub for routing and scheduling requests across the system.</p>
+                <div class="framework-connector" aria-hidden="true"></div>
+                <div class="framework-stage flow-stage stage-node">
+                    <div class="stage-head">
+                        <span class="stage-index">02</span>
+                        <h3>Node Server</h3>
+                    </div>
+                    <div class="node-actions">
+                        <span>Register</span>
+                        <span>Command</span>
+                        <span>Msg Forward</span>
+                        <span>UnRegister</span>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="icon">🧠</div>
-                    <h3>Memory Layer</h3>
-                    <p>Stores critical historical interaction data: failure scenarios, robot characteristics, and model tuning priorities.</p>
+                <div class="framework-connector" aria-hidden="true"></div>
+                <div class="core-wrapper">
+                    <div class="core-input-rail">
+                        <div class="talk-input">Talk Input</div>
+                        <div class="talk-input-arrow" aria-hidden="true"></div>
+                    </div>
+                    <div class="framework-stage flow-stage stage-core">
+                        <div class="stage-head">
+                            <span class="stage-index">03</span>
+                            <h3>Core</h3>
+                        </div>
+                        <div class="core-stack">
+                            <div class="physclaw-core">
+                                <span class="core-title">PhysClaw*</span>
+                                <span class="core-subtitle">Reasoning · Reward Mapping · Policy Update</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <div class="icon">🤖</div>
-                    <h3>Node Layer</h3>
-                    <p>Managed by NodeServer, connecting various entities:</p>
-                    <ul>
-                        <li><strong>Robot Entity:</strong> Control & Sensor reading.</li>
-                        <li><strong>ValueModel:</strong> Task success/failure evaluation.</li>
-                        <li><strong>VLA/World Model:</strong> Models targeted for RL tuning.</li>
-                        <li><strong>Training Tools:</strong> Data management & training frameworks.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <div class="icon">📝</div>
-                    <h3>Models</h3>
-                    <p>Utilizes VLM/LLM models for NLU, converting natural language into actionable reward signals.</p>
+                <div class="framework-connector" aria-hidden="true"></div>
+                <div class="framework-stage flow-stage stage-loop">
+                    <div class="stage-head">
+                        <span class="stage-index">04</span>
+                        <h3>Continual Learning</h3>
+                    </div>
+                    <div class="loop-block">
+                        <div class="loop-icon"></div>
+                        <div class="loop-title">Physical AI Model Continual Learning</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -99,19 +120,55 @@
                 <h2>Key Features</h2>
                 <div class="divider"></div>
             </div>
+            <div class="feature-intro">
+                <p>We are actively opening more high-impact modules and benchmark directions for the community. Join as a contributor to co-build the next generation of physical-world continual learning.</p>
+                <a href="https://github.com/GigaAI-research/PhysClaw" target="_blank" rel="noopener noreferrer" class="feature-cta">Become a Contributor</a>
+            </div>
             <div class="feature-list">
                 <div class="feature-item">
                     <div class="feature-number">01</div>
                     <div class="feature-text">
-                        <h3>VLA Continual Learning by Simply Talking</h3>
+                        <h3>VLA Continual Learning Simply by Talking</h3>
                         <p>Enable Vision-Language-Action models to improve continuously through simple conversational feedback.</p>
                     </div>
                 </div>
                 <div class="feature-item">
                     <div class="feature-number">02</div>
                     <div class="feature-text">
-                        <h3>World Model Continual Learning by Simply Talking</h3>
+                        <h3>World Model Continual Learning Simply by Talking</h3>
                         <p>Refine and update World Models using natural language interactions to better understand and predict physical environments.</p>
+                    </div>
+                </div>
+                <div class="feature-item feature-item--contrib">
+                    <div class="feature-number">03</div>
+                    <div class="feature-text">
+                        <h3>Value Model Auto-Diagnosis Pipeline</h3>
+                        <p>Open for contributors: build richer failure-cause attribution, confidence tracking, and interpretable diagnostics for Value Models.</p>
+                        <span class="feature-tag">Community Contributor Needed</span>
+                    </div>
+                </div>
+                <div class="feature-item feature-item--contrib">
+                    <div class="feature-number">04</div>
+                    <div class="feature-text">
+                        <h3>Robot Sensor Fusion Adapters</h3>
+                        <p>Open for contributors: extend unified sensor interfaces across robot types, with robust state normalization and plug-in adapters.</p>
+                        <span class="feature-tag">Community Contributor Needed</span>
+                    </div>
+                </div>
+                <div class="feature-item feature-item--contrib">
+                    <div class="feature-number">05</div>
+                    <div class="feature-text">
+                        <h3>Memory-Driven Tuning Policy</h3>
+                        <p>Open for contributors: design memory retrieval strategies that decide when to prioritize Value Model tuning versus VLA/World Model tuning.</p>
+                        <span class="feature-tag">Community Contributor Needed</span>
+                    </div>
+                </div>
+                <div class="feature-item feature-item--contrib">
+                    <div class="feature-number">06</div>
+                    <div class="feature-text">
+                        <h3>Reward Translation from Natural Language</h3>
+                        <p>Open for contributors: improve how VLM/LLM converts human feedback into stable and efficient reward signals for RL loops.</p>
+                        <span class="feature-tag">Community Contributor Needed</span>
                     </div>
                 </div>
             </div>
@@ -126,5 +183,86 @@
             </div>
         </div>
     </footer>
+    <script>
+        const animatedTargets = document.querySelectorAll('.section, .text-block, .card, .feature-item, .footer-content, .flow-stage');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                }
+            });
+        }, { threshold: 0.12 });
+        animatedTargets.forEach((el) => {
+            el.classList.add('reveal');
+            observer.observe(el);
+        });
+
+        const sections = Array.from(document.querySelectorAll('.section'));
+        const setActiveSection = (activeEl) => {
+            sections.forEach((section) => {
+                const isActive = section === activeEl;
+                section.classList.toggle('section-active', isActive);
+                section.classList.toggle('section-inactive', !isActive);
+            });
+        };
+        if (sections.length > 0) {
+            setActiveSection(sections[0]);
+            const sectionObserver = new IntersectionObserver((entries) => {
+                const visible = entries
+                    .filter((entry) => entry.isIntersecting)
+                    .sort((a, b) => b.intersectionRatio - a.intersectionRatio);
+                if (visible[0]) setActiveSection(visible[0].target);
+            }, {
+                threshold: [0.25, 0.45, 0.65],
+                rootMargin: '-15% 0px -20% 0px'
+            });
+            sections.forEach((section) => sectionObserver.observe(section));
+        }
+
+        const jumpLinks = document.querySelectorAll('a[href^="#"]');
+        jumpLinks.forEach((link) => {
+            link.addEventListener('click', (event) => {
+                const hash = link.getAttribute('href');
+                if (!hash || hash === '#') return;
+                const target = document.querySelector(hash);
+                if (!target) return;
+                event.preventDefault();
+                const runScroll = () => target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                if (target.classList.contains('section')) setActiveSection(target);
+                if (typeof document.startViewTransition === 'function') {
+                    document.startViewTransition(runScroll);
+                } else {
+                    document.body.classList.add('is-switching');
+                    window.setTimeout(runScroll, 120);
+                    window.setTimeout(() => document.body.classList.remove('is-switching'), 760);
+                }
+            });
+        });
+
+        const hero = document.querySelector('.hero-section');
+        const heroContent = document.querySelector('.hero-content');
+        if (hero && heroContent) {
+            hero.addEventListener('mousemove', (event) => {
+                const rect = hero.getBoundingClientRect();
+                const x = (event.clientX - rect.left) / rect.width - 0.5;
+                const y = (event.clientY - rect.top) / rect.height - 0.5;
+                heroContent.style.transform = `translate3d(${x * 16}px, ${y * 12}px, 0)`;
+            });
+            hero.addEventListener('mouseleave', () => {
+                heroContent.style.transform = 'translate3d(0, 0, 0)';
+            });
+        }
+
+        const flowStages = Array.from(document.querySelectorAll('.flow-stage'));
+        let flowIndex = 0;
+        if (flowStages.length > 0) {
+            flowStages[0].classList.add('flow-active');
+            window.setInterval(() => {
+                flowStages[flowIndex].classList.remove('flow-active');
+                flowIndex = (flowIndex + 1) % flowStages.length;
+                flowStages[flowIndex].classList.add('flow-active');
+            }, 1800);
+        }
+    </script>
 </body>
 </html>
