@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhysClaw*: Physical Continual Learning Agent Workflow</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">PhysClaw*</div>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#framework">Framework</a>
+                    <a href="#features">Features</a>
+                    <a href="https://github.com/openclaw/openclaw" class="btn btn-outline">GitHub</a>
+                </div>
+            </nav>
+            <div class="hero-content">
+                <h1 class="hero-title">PhysClaw* <br><span>Physical Continual Learning Agent Workflow</span></h1>
+                <p class="hero-subtitle">Bridging the gap between Physical AI and Real-World Interaction via Natural Language Feedback.</p>
+                <div class="hero-buttons">
+                    <a href="#framework" class="btn btn-primary">Explore Framework</a>
+                    <a href="#" class="btn btn-secondary">Read Paper</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="section dark-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Vision & Mission</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="content-grid">
+                <div class="text-block">
+                    <h3>The Challenge</h3>
+                    <p>Current physical AI models (e.g., Embodied VLA models) struggle to obtain dense and accurate reward signals during real-world interactions, limiting their ability to improve robot manipulation performance continuously.</p>
+                </div>
+                <div class="text-block">
+                    <h3>Our Solution</h3>
+                    <p>PhysClaw* leverages the power of OpenClaw agents to efficiently convert simple human chat into dense, accurate reinforcement learning signals. This enables robots to learn continuously from natural language feedback, closing the Sim2Real gap.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="framework" class="section light-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>PhysClaw* Framework</h2>
+                <div class="divider"></div>
+                <p>A user-friendly architecture for efficient management of physical AI models and entities.</p>
+            </div>
+            
+            <div class="framework-grid">
+                <div class="card">
+                    <div class="icon">💬</div>
+                    <h3>Channel Layer</h3>
+                    <p>Accepts human chat inputs from various platforms including Feishu, WeChat, and SMS.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🔀</div>
+                    <h3>Gateway</h3>
+                    <p>Acts as the central hub for routing and scheduling requests across the system.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🧠</div>
+                    <h3>Memory Layer</h3>
+                    <p>Stores critical historical interaction data: failure scenarios, robot characteristics, and model tuning priorities.</p>
+                </div>
+                <div class="card">
+                    <div class="icon">🤖</div>
+                    <h3>Node Layer</h3>
+                    <p>Managed by NodeServer, connecting various entities:</p>
+                    <ul>
+                        <li><strong>Robot Entity:</strong> Control & Sensor reading.</li>
+                        <li><strong>ValueModel:</strong> Task success/failure evaluation.</li>
+                        <li><strong>VLA/World Model:</strong> Models targeted for RL tuning.</li>
+                        <li><strong>Training Tools:</strong> Data management & training frameworks.</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <div class="icon">📝</div>
+                    <h3>Models</h3>
+                    <p>Utilizes VLM/LLM models for NLU, converting natural language into actionable reward signals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="section dark-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Key Features</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <div class="feature-number">01</div>
+                    <div class="feature-text">
+                        <h3>VLA Continual Learning by Simply Talking</h3>
+                        <p>Enable Vision-Language-Action models to improve continuously through simple conversational feedback.</p>
+                    </div>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-number">02</div>
+                    <div class="feature-text">
+                        <h3>World Model Continual Learning by Simply Talking</h3>
+                        <p>Refine and update World Models using natural language interactions to better understand and predict physical environments.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">PhysClaw*</div>
+                <p>&copy; 2026 PhysClaw* Project. Powered by OpenClaw.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
