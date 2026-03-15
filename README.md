@@ -1,4 +1,4 @@
-# PhysClaw
+# PhysClaw*
 PhysClaw*: Physical Continual Learning Agent Workflow
 
 
@@ -25,7 +25,7 @@ PhysClaw* aims to support **distributed physical intelligence systems** where mu
 
 The system architecture includes:
 
-- **PhysClaw Gateway**
+- **PhysClaw* Gateway**
 - **Node Server** for orchestration
 - **Robot Nodes**
 - **Model Nodes**
@@ -43,7 +43,7 @@ Human Interaction
 │
 Channel
 │
-PhysClaw Gateway
+PhysClaw* Gateway
 │
 Node Server
 │
